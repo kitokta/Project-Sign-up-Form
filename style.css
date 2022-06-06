@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.mother-box {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: max(35%, 300px);
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content-box{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+    padding: 50px;
+    margin: 10vh 0;
+    background-color: #fff;
+}
+
+.header-text, .form-header {
+    width: clamp(45ch, 50%, 75ch);
+}
+
+.form-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    width: 600px;
+    height: 100px;
+}
