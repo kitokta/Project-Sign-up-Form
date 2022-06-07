@@ -73,12 +73,13 @@ header {
 
 .header-text, .form-header {
     font-size: 25px;
-    width: clamp(45ch, 50%, 75ch);
+    min-width: 200px
 }
 
 .middle-box {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
     box-shadow: 10px 12px 10px 1px #DBDBD9;
     border-top: 2px solid #F9F9F8;
@@ -88,17 +89,16 @@ header {
 
 .form-box {
     display: flex;
-    flex: 1;
-    flex-wrap: wrap;
+    flex-direction: column;
     max-width: 650px;
-    height: 200px;
-    gap: 40px;
+    min-height: 220px;
+    gap: 20px
 }
 
-.form-right,
-.form-left {
+.form1,
+.form2,
+.form3 {
     display: flex;
-    flex-direction: column;
     gap: 20px;
     width: 290px;
 }
@@ -155,4 +155,37 @@ label,
 #login {
     text-decoration: none;
     color: #596D48;
+}
+
+@media only screen and (max-width: 768px){
+    .mother-box {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .sidebar {
+        width: 100%;
+        background-position: center;
+    }
+
+    .logo {
+        height: 0;
+        width: 0;
+    }
+
+    .logo-box {
+        margin-top: 50px;
+    }
+
+    .form1,
+    .form2,
+    .form3 {
+        flex-direction: column;
+        flex-shrink: 1;
+    }
+
+    .content-header {
+        margin-top: 0;
+    }
 }
