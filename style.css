@@ -80,33 +80,42 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 30px;
-    box-shadow: 10px 12px 10px 1px #DBDBD9;
-    border-top: 2px solid #F9F9F8;
-    background-color: #Fff;
-    padding: 40px;
 }
 
 .form-box {
-    display: flex;
-    flex-direction: column;
+    box-shadow: 10px 12px 10px 1px #DBDBD9;
+    border-top: 2px solid #F9F9F8;
+    background-color: #Fff;
+    gap: 0px;
+    padding: 40px;
+}
+
+.form {
     max-width: 650px;
     min-height: 220px;
-    gap: 20px
+}
+
+fieldset {
+    border: 0;
 }
 
 .form1,
 .form2,
 .form3 {
     display: flex;
-    gap: 20px;
+    gap: 35px;
     width: 290px;
 }
 
 .input {
     display: flex;
     flex-direction: column;
+    margin: 15px 0;
 }
+
+input:invalid {
+    border-color: red;
+  }
 
 .ipt-btn {
     border: 2px solid #E5E7EB;
@@ -182,7 +191,7 @@ label,
     .form2,
     .form3 {
         flex-direction: column;
-        flex-shrink: 1;
+        gap: 0;
     }
 
     .content-header {

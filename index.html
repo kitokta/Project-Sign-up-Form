@@ -24,44 +24,46 @@
             <h3 class="header-text">Se inscreva <em>agora</em> para começar</h3>
         </div>
         <div class="middle-box">
-            <h3 id="form-header">Vamos lá!</h3>
+            
             <div class="form-box">
-                <div class="form1">
+                <form>
+                <h3 id="form-header">Vamos lá!</h3>
+                <fieldset class="form1">
                     <div class="input">
-                        <label for="first-name">Primeiro Nome:</label>
+                        <label for="first-name">*Primeiro Nome:</label>
                         <input class="ipt-btn" type="text" id="first-name" required>
                     </div>
                 <div class="input">
                         <label for="last-name">Sobrenome:</label>
-                        <input class="ipt-btn"  type="text" id="last-name" required>
+                        <input class="ipt-btn"  type="text" id="last-name">
                 </div>
-            </div>
-                <div class="form2">
+                </fieldset>
+                <fieldset class="form2">
                     <div class="input">
-                        <label for="email">E-mail:</label>
+                        <label for="email">*E-mail:</label>
                         <input class="ipt-btn"  type="email" name="e-mail" id="email" placeholder="seu-email@email.com" required>
                     </div>
                     <div class="input">
                         <label for="phone-number">Telefone:</label>
                         <input class="ipt-btn"  type="number" name="phone" id="phone-number">
                     </div>
-                </div>
-                <div class="form3">
+                </fieldset>
+                <fieldset class="form3">
                     <div class="input">
-                    <label for="password-input">Senha:</label>
+                    <label for="password-input">*Senha:</label>
                     <input class="ipt-btn"  type="password" name="password" id="password-input" required>
                     </div>
                     <div class="input">
                         <label for="password-confirm">Confirme a senha:</label>
                         <input class="ipt-btn"  type="password" name="password" id="password-confirm" required>
                     </div> 
-                </div>
+                </fieldset>
             </div>
+            <div class="btn-box">
+                <button id="create-account" type="submit">Criar Conta</button>
+                <p>Já possui uma conta? <a id="login" href="#">Faça Login</a></p>
+            </form>
         </div>
-
-        <div class="btn-box">
-            <input id="create-account" type="button" value="Criar Conta">
-            <p>Já possui uma conta? <a id="login" href="#">Faça Login</a></p>
         </div>
     </div>
     </div>
