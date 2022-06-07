@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('/img/greek-backgroud.jpg');
+    background-image: url('./img/greek-backgroud.jpg');
     background-size: cover;
 }
 
